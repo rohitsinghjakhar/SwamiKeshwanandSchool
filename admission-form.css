@@ -1,0 +1,154 @@
+/* Admission Form Styles */
+.admission-form {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.admission-form h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #004d99;
+  margin-bottom: 20px;
+}
+
+.admission-form p {
+  text-align: center;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.admission-form h3 {
+  font-size: 1.5rem;
+  color: #004d99;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ffcc00;
+  padding-bottom: 5px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="date"],
+.form-group input[type="number"],
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="tel"]:focus,
+.form-group input[type="date"]:focus,
+.form-group input[type="number"]:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #004d99;
+  box-shadow: 0 0 5px rgba(0, 77, 153, 0.5);
+  outline: none;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-group select {
+  appearance: none;
+  background-color: white;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23004d99%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+}
+
+.form-group button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #004d99;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+  background-color: #003366;
+}
+
+/* Responsive Design for Admission Form */
+@media (max-width: 768px) {
+  .admission-form {
+      padding: 15px;
+  }
+
+  .admission-form h2 {
+      font-size: 1.8rem;
+  }
+
+  .admission-form h3 {
+      font-size: 1.3rem;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="tel"],
+  .form-group input[type="date"],
+  .form-group input[type="number"],
+  .form-group select,
+  .form-group textarea {
+      font-size: 0.9rem;
+  }
+
+  .form-group button {
+      font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .admission-form h2 {
+      font-size: 1.5rem;
+  }
+
+  .admission-form h3 {
+      font-size: 1.2rem;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="tel"],
+  .form-group input[type="date"],
+  .form-group input[type="number"],
+  .form-group select,
+  .form-group textarea {
+      font-size: 0.8rem;
+  }
+
+  .form-group button {
+      font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Admission</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="firebaseauth.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <div class="container" id="signIn">
+        <h1 class="form-title">Student Login</h1>
+        <form id="studentSignInForm">
+          <div id="signInMessage" class="messageDiv" style="display:none;"></div>
+
+          <div class="input-group">
+              <i class="fas fa-envelope"></i>
+              <input type="email" id="email" placeholder="Email" required>
+          </div>
+          <div class="input-group">
+              <i class="fas fa-lock"></i>
+              <input type="password" id="password" placeholder="Password" required>
+          </div>
+          <p class="recover">
+            <a href="#">Recover Password</a>
+          </p>
+         <button class="btn" id="submitSignIn">Sign In</button>
+        </form>
+
+        <p class="or">OR</p>
+        <div class="links">
+          <button id="signUpButton">Don't have an account yet?</button>
+        </div>
+    </div>
+</body>
+</html>

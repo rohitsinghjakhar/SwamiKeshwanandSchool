@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="firebaseauth.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="form-title">Student Registration</h1>
+        <form id="studentSignUpForm">
+            <div id="signUpMessage" class="messageDiv" style="display:none;"></div>
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" id="fName" placeholder="First Name" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" id="lName" placeholder="Last Name" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-calendar"></i>
+                <input type="date" id="dob" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-venus-mars"></i>
+                <select id="gender" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-phone"></i>
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-home"></i>
+                <input type="text" id="address" placeholder="Address" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="rEmail" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="rPassword" placeholder="Password (min 8 char)" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-book"></i>
+                <select id="course" required>
+                    <option value="" disabled selected>Select Course</option>
+                    <option value="BCA">B.C.A.</option>
+                    <option value="Btech">B.Tech</option>
+                    <option value="BBA">B.B.A.</option>
+                    <option value="BA">B.A.</option>
+                    <option value="Bsc">B.Sc.</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-id-card"></i>
+                <input type="text" id="studentID" placeholder="Student ID (if available)">
+            </div>
+            <button class="btn" id="submitSignUp">Register</button>
+        </form>
+        <p class="or">OR</p>
+        <div class="links">
+            <a href="login.html"><button id="signInButton">Already Have an Account?</button></a>
+        </div>
+    </div>
+</body>
+</html>

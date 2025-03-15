@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keshwanand Group of Higher Education</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBYK1qyFrhXktrFeAI1o-i6W5VhWa_bie8",
+      authDomain: "quizprojectdemo-727a2.firebaseapp.com",
+      databaseURL: "https://quizprojectdemo-727a2-default-rtdb.firebaseio.com",
+      projectId: "quizprojectdemo-727a2",
+      storageBucket: "quizprojectdemo-727a2.firebasestorage.app",
+      messagingSenderId: "438990708919",
+      appId: "1:438990708919:web:14635c9c5e96a18ca5ad32",
+      measurementId: "G-F04V2ZZ3V3"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="school-logo.png" alt="Logo" width="100" height="100">
+                <h1>Swami Keshwanand Group of Higher Education</h1>
+                
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+
+
+                    <!-- About Us -->
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">About Us</a>
+                        <div class="dropdown-content">
+                            <a href="About.html">About Organization</a>
+                            <a href="https://maps.app.goo.gl/fbinAG7nRsAinR5C9">Virtual Tour</a>
+                            <a href="desk.html">Vision Mission</a>
+                            <a href="campus.html">Campus</a>
+                            <a href="About.html">Affiliation</a>
+                        </div>
+                    </li>                
+                    
+                    
+                    <!-- Facilities -->
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Facilities</a>
+                        <div class="dropdown-content">
+                            <a href="Library.html">Library</a>
+                            <a href="Laboratories.html">Laboratories</a>
+                            <a href="Computer.html">Computer Lab</a>
+                            <a href="Sports.html">Sports</a>
+                            <a href="Hostel.html">Hostel</a>
+                            <a href="Transporotion.html">Transporotion</a>
+                            <a href="Canteen.html">Canteen</a>
+                        </div>
+                    </li>
+
+
+                    <!-- Infrastructure -->
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Infrastructure</a>
+                        <div class="dropdown-content">
+                            <a href="https://maps.app.goo.gl/fbinAG7nRsAinR5C9">Campus Overview</a>
+                            <a href="Indoor.html">Indoor Games</a>
+                            <a href="Sports.html">Sports</a>
+                            <a href="DanceRoom.html">Dance Room</a>
+                            <a href="photos.html">Photo Gallery</a>
+                            <a href="videos.html">Video Gallery</a>
+                        </div>
+                    </li>
+
+
+                    <!-- Staff -->
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Staff</a>
+                        <div class="dropdown-content">
+                            <a href="teachingstaff.html">Teaching Staff</a>
+                            <a href="nonteaching.html">Non-Teaching Staff</a>
+                            <a href="payment.html">Payment Mode</a>
+                        </div>
+                    </li>
+
+
+                    <!-- Administration -->
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Administration</a>
+                        <div class="dropdown-content">
+                            <a href="desk.html">Director's Desk</a>
+                            <a href="desk.html">Chairman's Desk</a>
+                            <a href="desk.html">Principal's Desk</a>
+                            <a href="committee.html">Managing Committee</a>
+                        </div> 
+                    </li>
+
+
+
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Academics</a>
+                        <div class="dropdown-content">
+                            <a href="result.html">Our Result</a>
+                            <a href="course.html">Courses</a>
+                            <a href="Academics.html">Academics</a>
+
+                        </div>
+                    </li>
+
+                    
+
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Contact us</a>
+                        <div class="dropdown-content">
+                            <a href="contact.html">Contact us</a>
+                            <a href="https://maps.app.goo.gl/fbinAG7nRsAinR5C9">Location</a>
+                            <a href="feedback.html">Feedback</a>
+                            <a href="job.html">Apply for JOB</a>
+
+                        </div>
+                    </li>
+                  <li><a href="admission-form.html" class="button">Register for Admission</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+ <!-- Welcome Section -->
+ <!-- <section id="home" class="welcome-section">
+  <div class="welcome-container">
+    <h1>Welcome to Keshwanand Group of Higher Education</h1>
+    <p>Empowering future leaders with quality education and holistic development.</p>
+
+  </div>
+</section> -->
+
+
+<div class="animated-text">
+  <h1><span class="typing-effect">Keshwanand Group of Higher Education Campus Overview</span></h1>
+</div>
+
+
+
+
+      <!-- Carousel Section -->
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/skss (1).png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <!-- <h5 style="font-weight: bold;">Keshwanand School 10th Toppers</h5> -->
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/skss (2).png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/skss (3).png" class="d-block w-100" alt="...">
+
+        <div class="carousel-caption d-none d-md-block">
+          <!-- <h5 style="font-weight: bold;">Keshwanand School Campus 2</h5>
+          <p>Laxmangarh, Alwar</p> -->
+        </div>
+      </div>
+
+
+      <div class="carousel-item">
+        <img src="images/skss (4).png" class="d-block w-100" alt="...">
+
+        <div class="carousel-caption d-none d-md-block">
+          <!-- <h5 style="font-weight: bold;">Keshwanand School Campus 2</h5>
+          <p>Laxmangarh, Alwar</p> -->
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="images/skss (5).png" class="d-block w-100" alt="...">
+
+        <div class="carousel-caption d-none d-md-block">
+          <!-- <h5 style="font-weight: bold;">Keshwanand School Campus 2</h5>
+          <p>Laxmangarh, Alwar</p> -->
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="images/skss (6).png" class="d-block w-100" alt="...">
+
+        <div class="carousel-caption d-none d-md-block">
+          <!-- <h5 style="font-weight: bold;">Keshwanand School Campus 2</h5>
+          <p>Laxmangarh, Alwar</p> -->
+        </div>
+      </div>
+
+
+      <div class="carousel-item">
+        <img src="images/skss (7).png" class="d-block w-100" alt="...">
+
+        <div class="carousel-caption d-none d-md-block">
+          <!-- <h5 style="font-weight: bold;">Keshwanand School Campus 2</h5>
+          <p>Laxmangarh, Alwar</p> -->
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+ 
+
+
+
+
+
+    <!-- Facilities -->
+
+        <h2>Canteen</h2>
+
+        <center>
+        <li> Our school canteen is a vibrant space that provides students with a variety of hygienic and delicious food options. It is designed to promote healthy eating habits, offering freshly prepared meals and snacks that cater to diverse tastes. The canteen staff ensures cleanliness and quality, making it a favorite spot for students to relax and enjoy nutritious food during their breaks. Whether it's a quick snack or a wholesome meal, the canteen serves as a hub of energy and nourishment, contributing to the overall well-being of our students.</li>
+      </center>
+         
+          
+
+
+          <!-- Coming Soon
+          <div class="card mb-3">
+            <img src="https://t3.ftcdn.net/jpg/02/77/69/26/360_F_277692690_xAGq27kZEjCmDq8D3lcttSjM6IeUVgKI.jpg" class="card-img-top" alt="COMING SOON">
+          </div> -->
+          
+        
+        
+
+         
+          
+          
+
+
+
+    <footer>
+        <div class="footer-container">
+            <!-- School Info Section -->
+            <div class="footer-section">
+                <h2>Keshwanand Group of Higher Education</h2>
+                <p><strong>Address:</strong> Rajput Colony, Laxmangarh, Alwar, Rajasthan 321607</p>
+                <p><strong>Mob:</strong> +91 9414856331</p>
+
+
+            </div>
+
+            <!-- Navigation Links Section -->
+            <div class="footer-section">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admission.html">Admission</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="footer-section">
+              <ul>
+                  <li><a href="result.html">Our Result</a></li>
+                  <li><a href="course.html">Courses</a></li>
+                  <li><a href="teachingstaff.html">Teaching Staff</a></li>
+                  <li><a href="campus.html">Campus Overview</li>
+                 
+              </ul>
+          </div>
+            
+
+            <!-- Legal Links Section -->
+            <div class="footer-section">
+                <ul>
+                  <li><a href="photos.html">Photo Gallery</a></li>
+                    <li><a href="videos.html">Video Gallery</a></li>
+                    <li><a href="desk.html">Director's Desk</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+            </div>
+
+
+            <!-- Social Media Links Section -->
+            <div class="footer-section">
+              <h3>Follow Us</h3>
+              <div class="social-links">
+                  <a href="https://www.facebook.com/KeshwanandSchool/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png" alt="Facebook" class="social-icon"></a>
+               
+                  <a href="https://www.youtube.com/@keshwanandschoollaxmangarh" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/1384/1384060.png" alt="Youtube" class="social-icon"></a>
+
+                  <a href="https://www.instagram.com/swami.keshwanand/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" alt="Instagram" class="social-icon"></a>
+
+                  <a href="https://www.threads.net/@swami.keshwanand" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/12105/12105336.png" alt="threads" class="social-icon"></a>
+
+                  <a href="https://wa.me/919352968264" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/3670/3670051.png" alt="Whastapp" class="social-icon"></a>
+
+                  <a href="https://maps.app.goo.gl/fbinAG7nRsAinR5C9" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/1865/1865269.png" alt="Location" class="social-icon"></a>
+              </div>
+          </div>
+        </div>
+
+        <!-- Footer Bottom Section -->
+        <div class="footer-bottom">
+            <p>&copy; 2020 Keshwanand Group of Higher Education | All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+
+
+<script>
+  
+   // Toggle the navigation menu on mobile
+   function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    }
+    </script>
+</html>
